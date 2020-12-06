@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+       <title>
+           CodePen - Demo Flexbox 3
+       </title>
+       <style>
+            * {
+                box-sizing: border-box; 
+            }
+            body {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: row;
+                margin: 0;
+                padding: 10px ;
+            }
+            .col-1 {
+                background: #D7E8D4;
+                flex: 1;
+                text-align: center;
+            }
+            .col-2 {
+                display: flex;
+                flex-flow: column wrap;
+                flex: 5;
+                text-align: center;
+            }
+            header{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: tomato;
+                font-weight: bold;
+                padding: 10px;
+            }
+            .content {
+                display: flex;
+                flex-direction: row;
+            }
+            section{
+                text-align: left;
+                display: flex;
+                flex-flow: column wrap;
+                text-align: left;
+                background: deepskyblue;
+                flex: 4;
+            }
+            article {
+                padding: 10px;
+                margin: 10px;
+                background: aqua;
+            }
+            aside {
+                background: beige;
+                flex: 1;
+            }
+            nav, aside {
+                padding: 1em;
+            }
+            footer{
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: lightgreen;
+                font-weight: bold;
+                padding: 12px;
+            }
+            .gallary {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                flex-direction: row;
+                max-height: 50vh;
+            }
+            .gallary img {
+                margin: 10px;
+                border: 3px solid #000;
+                box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.3); 
+                max-width: 15vw;
+            }
+            .cards {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+            }
+            .card {
+                flex: 0 0 200px;
+                margin: 10px;
+                border: 1px solid #ccc;
+                box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+                background-color: white;
+                text-align: left;
+            }  
+            .card img {
+                max-width: 100%;
+            }
+            .card .text {
+                padding: 0 20px 20px;
+            }
+            .card .text > button {
+                background: gray;
+                border: 0;
+                color: white;
+                padding: 10px;
+                width: 100%;
+            }
+            .media {
+                display: flex;
+                align-items: flex-start;
+                background: #F6F3EB;
+                padding: 1em;
+                border-radius: 3px;
+                max-width: 24em;
+                text-align: left;
+            }
+            .media-object {
+                margin-right: 1em;
+                max-width: 50%;
+            }
+            .media-body {
+                flex: 2;
+                margin-right: 7em;
+            }
+            .media-heading {
+                margin: 0 0 .5em;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="col-1">Left side bar
+            <div class="media">
+                <img class="media-object" src="../assets/0.png" alt="Sample photo">
+                <div class="media-body">
+                  <h3 class="media-heading">BridgeLabz</h3>
+                  <p>
+                      BridgeLabz is AWS recognized Incubator focused on solving the tech employability challenge.
+                </p>
+                </div>
+            </div>
+            <main class="cards">
+                <article class="card">
+                  <img src="../assets/BL_logo_square_jpg.jpg" alt="Sample photo">
+                  <div class="text">
+                    <h3>Bridge Labz</h3>
+                    <p>CridgeLabz is AWS recognized Incubator focused on solving the tech employability challenge. </p>
+                    <button><a href="https://www.BridgeLabz.com">check here</a></button>
+                  </div>
+                </article>
+                <article class="card">
+                  <img src="../assets/0.png" alt="Sample photo">
+                  <div class="text">
+                    <h3>Bridge Labz</h3>
+                    <p>It aims to solve the problem of low employability of engineers in India, by expanding the employability pool with its ‘Maker Program’.</p>
+                    <button><a href="https://www.BridgeLabz.com">check here</a></button>
+                  </div>
+                </article>
+            </main>
+        </nav>
+        <div class="col-2">
+  	        <header>
+                <h1>HEADER - Sample Flexbox Example</h1>
+            </header>
+            <main class="content">
+                <section>
+                    <article>
+                        <h2>First article</h2>
+                        <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+                    </article>
+                    <article>
+                        <h2>First article</h2>
+                        <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+                    </article>
+                    <article>
+                        <h2>First article</h2>
+                        <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+                    </article>
+                    <article>
+                        <h2>First article</h2>
+                        <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+                    </article>
+                    <article>
+                        <h2>First article</h2>
+                        <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+                    </article>
+                    <article>
+                        <h2>First article</h2>
+                        <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+                    </article>
+                    <article>
+                        <h2>First article</h2>
+                        <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+                    </article>
+                    <article>
+                        <h2>First article</h2>
+                        <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+                    </article>
+                </section>
+                <aside>Right side bar
+                    <main class="gallary">
+                        <img src="../assets/BL_logo_square_jpg.jpg" alt="Sample photo">
+                        <img src="../assets/0.png" alt="Sample photo">
+                        <img src="../assets/1.png" alt="Sample photo">
+                        <img src="../assets/2.png" alt="Sample photo">
+                      </main>
+                </aside>
+            </main>
+  	        <footer>Footer</footer>
+        </div>
+    </body>
+</html>
